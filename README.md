@@ -35,7 +35,7 @@ Data files in the template stay as empty skeletons, so updates should not confli
 | Anytime | `/capture <thought>` — get it out of your head in seconds. |
 | Daily | `/process` — empty the inbox. `/next` — choose what to do. `/done` — check things off. |
 | Weekly | `/weekly-review` — get clear, get current, get creative. |
-| As needed | `/mindsweep`, `/project`, `/waiting`, `/context`. |
+| As needed | `/mindsweep`, `/project`, `/waiting`, `/contexts`. |
 
 ## Commands
 
@@ -48,7 +48,7 @@ Data files in the template stay as empty skeletons, so updates should not confli
 | `/done <keywords>` | Completes an action, logs it, and asks for the project's next action. |
 | `/project [name]` | Creates a project, or lists projects and flags stalled ones. |
 | `/waiting [what — from whom]` | Adds a waiting-for item, or reviews overdue ones. |
-| `/context [list\|add\|rename\|remove]` | Manages your contexts. |
+| `/contexts [list\|add\|rename\|remove]` | Manages your contexts. |
 | `/weekly-review` | Guided weekly review; writes notes to `reviews/`. |
 
 ## Files
@@ -61,7 +61,7 @@ Data files in the template stay as empty skeletons, so updates should not confli
 | `waiting-for.md` | Delegated items and things you expect from others. |
 | `calendar.md` | Day- or time-specific items and ticklers. |
 | `someday-maybe.md` | Ideas you are not committing to yet. |
-| `contexts.md` | Your contexts. Add your own any time with `/context add`. |
+| `contexts.md` | Your contexts. Add your own any time with `/contexts add`. |
 | `horizons.md` | Purpose, vision, goals, and areas of focus. |
 | `reference/` | Non-actionable information worth keeping. |
 | `completed.md` | Log of what you finished. |

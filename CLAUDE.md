@@ -110,5 +110,5 @@ Slash commands live in `.claude/commands/`:
 | `/done <action>` | Complete an action, log it, keep its project moving. |
 | `/project [name]` | Create a project, or list projects and flag stalled ones. |
 | `/waiting [item — person]` | Add a waiting-for item, or review the list. |
-| `/context [list\|add\|rename\|remove]` | Manage contexts. |
+| `/contexts [list\|add\|rename\|remove]` | Manage contexts. |
 | `/weekly-review` | Guided GTD weekly review. |

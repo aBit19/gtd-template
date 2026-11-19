@@ -1,6 +1,6 @@
 # Contexts
 
-<!-- Registry of valid contexts. Add, rename, or remove with /context.
+<!-- Registry of valid contexts. Add, rename, or remove with /contexts.
 Format: - @name — short description of when/where this context applies.
 Tip: agendas for people are contexts too, e.g. @agenda-alex for things to discuss with Alex. -->
 
