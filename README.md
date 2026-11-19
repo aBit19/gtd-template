@@ -19,8 +19,6 @@ git push -u origin main
 
 Then open the folder in Claude Code and run `/mindsweep` to fill your inbox, followed by `/process`.
 
-> **Work data:** keep your work instance somewhere your employer allows (for example, your company's Git hosting), not in a personal account.
-
 ### Getting template updates
 
 Improvements to the system live in `.claude/commands/`, `CLAUDE.md`, and this README. To pull them into an instance:
