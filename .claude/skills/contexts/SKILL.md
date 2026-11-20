@@ -1,7 +1,10 @@
 ---
-description: List, add, rename, or remove GTD contexts
-argument-hint: [list | add @name description | rename @old @new | remove @name]
+name: contexts
+description: List, add, rename, or remove GTD contexts. Use when the user runs /contexts, or asks to see, add, rename, or remove a context (for example "which contexts do I have?", "add a context for the gym", "rename @office to @work").
+argument-hint: "[list | add @name description | rename @old @new | remove @name]"
 ---
+
+If this was triggered by a plain-language request instead of the slash command, take the arguments from the user's latest message.
 
 Manage contexts. Arguments: $ARGUMENTS (default: `list`).
 

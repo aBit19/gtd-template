@@ -1,7 +1,10 @@
 ---
-description: Clarify and organize inbox items with the GTD decision tree
-argument-hint: [batch]
+name: process
+description: Clarify and organize inbox items with the GTD decision tree. Use when the user runs /process, or asks to process, clarify, or empty the inbox (for example "let's go through my inbox").
+argument-hint: "[batch]"
 ---
+
+If this was triggered by a plain-language request instead of the slash command, take the arguments from the user's latest message.
 
 Process `inbox.md` to zero, following the GTD clarify and organize steps. Read `contexts.md`, `horizons.md` (areas), and the list of files in `projects/` first so suggestions use real contexts, areas, and projects.
 

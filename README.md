@@ -23,7 +23,7 @@ Open the folder in Claude Code and run `/mindsweep` to fill your inbox, followed
 
 ### Getting template updates
 
-Improvements to the system live in `.claude/commands/`, `.claude/skills/`, `CLAUDE.md`, and this README. To pull them into an instance:
+Improvements to the system live in `.claude/skills/`, `CLAUDE.md`, and this README. To pull them into an instance:
 ```bash
 git remote add upstream <template-url>   # once, if not already set
 git pull upstream main
@@ -40,6 +40,8 @@ Data files and `settings.md` in the template stay as skeletons that updates neve
 | As needed | `/mindsweep`, `/project`, `/waiting`, `/contexts`. |
 
 ## Commands
+
+Each command is a skill in `.claude/skills/`. Type the slash command, or just ask in plain words, for example "what should I do now?" or "I finished the dentist call". `/mindsweep` and `/weekly-review` run only with the slash.
 
 | Command | What it does |
 |---------|-------------|

@@ -123,7 +123,7 @@ Read `mode` under `## Git sync` in `settings.md` and follow it. If the file or t
 
 ## Commands
 
-Slash commands live in `.claude/commands/`, and skills in `.claude/skills/<name>/SKILL.md`. Skills can also run without the slash, when the request matches their description:
+Commands are skills in `.claude/skills/<name>/SKILL.md`. Each runs with its slash command, and also when a request matches its description, except `/mindsweep` and `/weekly-review`, which run only with the slash:
 
 | Command | Purpose |
 |---------|---------|

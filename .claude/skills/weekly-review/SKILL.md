@@ -1,5 +1,7 @@
 ---
-description: Guided GTD weekly review — get clear, get current, get creative
+name: weekly-review
+description: Guided GTD weekly review — get clear, get current, get creative. Runs only when the user types /weekly-review.
+disable-model-invocation: true
 ---
 
 Guide the user through the GTD weekly review, one step at a time. After each step, wait for the user before moving on. The user can say "skip" to skip a step or "stop" to end early; still write the review notes at the end.

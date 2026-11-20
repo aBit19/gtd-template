@@ -1,6 +1,8 @@
 ---
-description: Guided brain dump through the GTD trigger list
-argument-hint: [personal|work|all]
+name: mindsweep
+description: Guided brain dump through the GTD trigger list. Runs only when the user types /mindsweep.
+argument-hint: "[personal|work|all]"
+disable-model-invocation: true
 ---
 
 Run a GTD mind sweep to get everything out of the user's head and into `inbox.md`. Scope: $ARGUMENTS (default: all).

@@ -1,7 +1,10 @@
 ---
-description: Add a waiting-for item, or review what you are waiting on
-argument-hint: [what — from whom]
+name: waiting
+description: Add a waiting-for item, or review what you are waiting on. Use when the user runs /waiting, says they are waiting on someone or something (for example "Sam owes me the contract", "I'm waiting for the plumber's quote"), or asks what they are waiting for.
+argument-hint: "[what — from whom]"
 ---
+
+If this was triggered by a plain-language request instead of the slash command, take the arguments from the user's latest message.
 
 Arguments: $ARGUMENTS
 

@@ -1,7 +1,10 @@
 ---
-description: Mark an action complete, log it, and keep its project moving
-argument-hint: <action text or keywords>
+name: done
+description: Mark an action complete, log it, and keep its project moving. Use when the user runs /done, or says they finished, did, or received something that is on their lists (for example "I called the dentist", "done with the carpenter email", "the book arrived").
+argument-hint: "<action text or keywords>"
 ---
+
+If this was triggered by a plain-language request instead of the slash command, take the arguments from the user's latest message.
 
 Mark this as done: $ARGUMENTS
 

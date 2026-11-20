@@ -1,7 +1,10 @@
 ---
-description: Create a project, or list projects and flag stalled ones
-argument-hint: [project name]
+name: project
+description: Create a project, or list projects and flag stalled ones. Use when the user runs /project, asks to create or start a project, or asks to see their projects or which ones are stalled (for example "show my projects", "make a project for the kitchen").
+argument-hint: "[project name]"
 ---
+
+If this was triggered by a plain-language request instead of the slash command, take the arguments from the user's latest message.
 
 Arguments: $ARGUMENTS
 

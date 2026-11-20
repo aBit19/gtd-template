@@ -1,7 +1,10 @@
 ---
-description: Suggest what to do now based on context, time, and energy
-argument-hint: [@context ...] [time e.g. 30m] [energy low|med|high]
+name: next
+description: Suggest what to do now based on context, time, and energy. Use when the user runs /next, or asks what to work on (for example "what should I do now?", "I have 20 minutes at home, what can I do?", "anything for low energy?").
+argument-hint: "[@context ...] [time e.g. 30m] [energy low|med|high]"
 ---
+
+If this was triggered by a plain-language request instead of the slash command, take the arguments from the user's latest message.
 
 Suggest what the user should do now. Arguments: $ARGUMENTS
 
