@@ -21,7 +21,7 @@ Then open the folder in Claude Code and run `/mindsweep` to fill your inbox, fol
 
 ### Getting template updates
 
-Improvements to the system live in `.claude/commands/`, `CLAUDE.md`, and this README. To pull them into an instance:
+Improvements to the system live in `.claude/commands/`, `.claude/skills/`, `CLAUDE.md`, and this README. To pull them into an instance:
 ```bash
 git remote add upstream <template-url>   # once, if not already set
 git pull upstream main

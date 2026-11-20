@@ -99,7 +99,7 @@ Project next actions live in `next-actions.md` (or `waiting-for.md` / `calendar.
 
 ## Commands
 
-Slash commands live in `.claude/commands/`:
+Slash commands live in `.claude/commands/`, and skills in `.claude/skills/<name>/SKILL.md`. Skills can also run without the slash, when the request matches their description:
 
 | Command | Purpose |
 |---------|---------|
