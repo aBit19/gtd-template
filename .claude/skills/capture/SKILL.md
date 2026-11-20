@@ -1,6 +1,6 @@
 ---
 name: capture
-description: Capture a thought into the GTD inbox instantly. Use when the user runs /capture, or explicitly asks to capture, jot down, note, or add something to their inbox (for example "capture: call the bank", "add renew passport to my inbox", "remind me to email Sam"). Do not use for commitments the user only mentions in passing; offer to capture those instead.
+description: Capture a thought into the GTD inbox instantly. Use when the user runs /capture, or explicitly asks to capture, jot down, note, or add something to their inbox (for example "capture: call the bank", "add renew passport to my inbox", "remind me to email Sam"). Do not use for commitments the user only mentions in passing; offer to capture those instead. Do not use for adding items to the shopping list; those go straight to `lists/shopping.md` as described in CLAUDE.md.
 argument-hint: <thought>
 ---
 
