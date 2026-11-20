@@ -16,6 +16,7 @@ This repository is a Getting Things Done (GTD) system based on David Allen's boo
 | `contexts.md` | Registry of valid contexts. The only source of truth for contexts. |
 | `horizons.md` | Higher horizons: purpose, vision, goals, areas of focus. |
 | `reference/<topic>.md` | Non-actionable information worth keeping. |
+| `lists/shopping.md` | Shopping list: simple purchases grouped by shop. |
 | `completed.md` | Log of completed actions and projects, grouped by date. |
 | `reviews/YYYY-MM-DD.md` | Weekly review notes. |
 | `settings.md` | Instance settings, such as the git sync mode. |
@@ -59,6 +60,11 @@ Example: `- [ ] Call Dr. Rossi's office to book a cleaning @phone +dental-checku
 - <action or "Project completed: <name>"> [@context] [+project-slug]
 ```
 
+**Shopping list** (in `lists/shopping.md`, under one `## <shop or category>` heading per shop)
+```
+- [ ] <item> [quantity]
+```
+
 **Context registry** (in `contexts.md`)
 ```
 - @name — short description of when/where this context applies
@@ -97,6 +103,15 @@ Project next actions live in `next-actions.md` (or `waiting-for.md` / `calendar.
 10. **Edit minimally.** Preserve formats, headings, HTML comments, and sort orders. Do not reformat unrelated lines.
 11. **Offer capture.** If the user mentions a commitment or idea in normal conversation, offer to capture it to the inbox.
 12. **Privacy.** This data is personal. Never send file contents to external services.
+
+## Shopping and wish lists
+
+- **Shopping list.** Simple purchases that need no research or decision (groceries, household restock, consumables) go in `lists/shopping.md` under the matching shop heading (create the heading if missing), not in `next-actions.md`. When the user asks to add something to the shopping list, add it directly, without going through the inbox.
+- **One action for the list.** While the shopping list has open items, `next-actions.md` keeps exactly one action pointing to it: `- [ ] Buy items on the shopping list @errands (added YYYY-MM-DD)`. Add it if it is missing.
+- **Bought items** are removed from the list, not logged individually in `completed.md`.
+- **Purchases that need thought** (comparing options, measuring, choosing) are normal next actions or projects.
+- **Wish list.** Things the user might want to buy one day go in `someday-maybe.md` under `## Wish list` (create the heading if missing).
+- **Gift ideas** for other people go in `reference/gift-ideas.md`, under one `## <person>` heading each.
 
 ## Git sync
 

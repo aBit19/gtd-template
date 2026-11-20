@@ -34,7 +34,7 @@ Data files and `settings.md` in the template stay as skeletons that updates neve
 
 | When | What |
 |------|------|
-| Anytime | `/capture <thought>` — get it out of your head in seconds. |
+| Anytime | `/capture <thought>` — get it out of your head in seconds. Say "add milk to the shopping list" for groceries. |
 | Daily | `/process` — empty the inbox. `/next` — choose what to do. `/done` — check things off. |
 | Weekly | `/weekly-review` — get clear, get current, get creative. |
 | As needed | `/mindsweep`, `/project`, `/waiting`, `/contexts`. |
@@ -65,7 +65,8 @@ Data files and `settings.md` in the template stay as skeletons that updates neve
 | `someday-maybe.md` | Ideas you are not committing to yet. |
 | `contexts.md` | Your contexts. Add your own any time with `/contexts add`. |
 | `horizons.md` | Purpose, vision, goals, and areas of focus. |
-| `reference/` | Non-actionable information worth keeping. |
+| `reference/` | Non-actionable information worth keeping, such as `reference/gift-ideas.md`. |
+| `lists/shopping.md` | Shopping list, grouped by shop. Wish-list items go in `someday-maybe.md` under `## Wish list`. |
 | `completed.md` | Log of what you finished. |
 | `reviews/` | Weekly review notes. |
 | `settings.md` | Your settings, such as the git sync mode. |

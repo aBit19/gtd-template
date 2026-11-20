@@ -9,6 +9,7 @@ Steps:
 1. If nothing was given, ask what was completed.
 2. Search open items in `next-actions.md`, `waiting-for.md`, and `calendar.md` for the best match (keywords are enough). If there are several plausible matches, list them numbered and ask which one. If there is no match, ask whether to log it as an unplanned completion.
 3. Remove the matched line from its file and append it to `completed.md` under a `## YYYY-MM-DD` heading for today (create the heading at the top of the log if missing; newest date first). Keep its `@context` and `+project` tags, and drop the checkbox and date metadata.
+   - Exception, `Buy items on the shopping list`: first ask which items were bought ("all" is fine) and remove them from `lists/shopping.md`. If items remain on the list, keep the action open instead of moving it to `completed.md`.
 4. If the item had a `+slug` tag:
    - Add `- YYYY-MM-DD Done: <action>` to the `## Log` section of `projects/<slug>.md`.
    - Check whether the project still has any other open item tagged `+slug` in `next-actions.md`, `waiting-for.md`, or `calendar.md`.
