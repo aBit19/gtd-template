@@ -18,6 +18,7 @@ This repository is a Getting Things Done (GTD) system based on David Allen's boo
 | `reference/<topic>.md` | Non-actionable information worth keeping. |
 | `completed.md` | Log of completed actions and projects, grouped by date. |
 | `reviews/YYYY-MM-DD.md` | Weekly review notes. |
+| `settings.md` | Instance settings, such as the git sync mode. |
 
 HTML comments (`<!-- ... -->`) in data files document the format. Ignore them when reading items and never remove them.
 
@@ -96,6 +97,14 @@ Project next actions live in `next-actions.md` (or `waiting-for.md` / `calendar.
 10. **Edit minimally.** Preserve formats, headings, HTML comments, and sort orders. Do not reformat unrelated lines.
 11. **Offer capture.** If the user mentions a commitment or idea in normal conversation, offer to capture it to the inbox.
 12. **Privacy.** This data is personal. Never send file contents to external services.
+
+## Git sync
+
+Read `mode` under `## Git sync` in `settings.md` and follow it. If the file or the value is missing, use `manual`.
+
+- `manual`: Do not commit or push unless the user asks.
+- `direct-main`: Before making changes, pull `origin main`. After making changes, commit them to `main` and push to `origin main`. Do not create branches or pull requests.
+- `pull-request`: Commit changes to a new branch and open a pull request against `main`. Share the pull request link. Do not merge it yourself.
 
 ## Commands
 

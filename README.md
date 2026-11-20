@@ -17,7 +17,9 @@ git remote add origin <your-private-repo-url>
 git push -u origin main
 ```
 
-Then open the folder in Claude Code and run `/mindsweep` to fill your inbox, followed by `/process`.
+Then choose how Claude saves your changes with git by setting the mode in `settings.md` (`manual`, `direct-main`, or `pull-request`; default `manual`). Use `direct-main` if you work from several devices, such as a laptop and the Claude app.
+
+Open the folder in Claude Code and run `/mindsweep` to fill your inbox, followed by `/process`.
 
 ### Getting template updates
 
@@ -26,7 +28,7 @@ Improvements to the system live in `.claude/commands/`, `.claude/skills/`, `CLAU
 git remote add upstream <template-url>   # once, if not already set
 git pull upstream main
 ```
-Data files in the template stay as empty skeletons, so updates should not conflict with your data. If they do, keep your version of the data file.
+Data files and `settings.md` in the template stay as skeletons that updates never change, so updates should not conflict with your data or settings. If they do, keep your version of the data file.
 
 ## Daily and weekly rhythm
 
@@ -66,6 +68,7 @@ Data files in the template stay as empty skeletons, so updates should not confli
 | `reference/` | Non-actionable information worth keeping. |
 | `completed.md` | Log of what you finished. |
 | `reviews/` | Weekly review notes. |
+| `settings.md` | Your settings, such as the git sync mode. |
 | `CLAUDE.md` | The rules and formats Claude follows. Edit it to change how the system behaves. |
 
 ## Line format at a glance
