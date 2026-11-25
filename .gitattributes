@@ -13,3 +13,4 @@ lists/** merge=ours
 projects/** merge=ours
 reference/** merge=ours
 reviews/** merge=ours
+daily/** merge=ours

@@ -40,7 +40,7 @@ git pull upstream main
 | When | What |
 |------|------|
 | Anytime | `/capture <thought>` — get it out of your head in seconds. Say "add milk to the shopping list" for groceries. |
-| Daily | `/process` — empty the inbox. `/next` — choose what to do. `/done` — check things off. |
+| Daily | `/today` — plan the day. `/process` — empty the inbox. `/next` — choose what to do. `/done` — check things off. |
 | Weekly | `/weekly-review` — get clear, get current, get creative. |
 | As needed | `/mindsweep`, `/project`, `/waiting`, `/contexts`. |
 
@@ -53,6 +53,7 @@ Each command is a skill in `.claude/skills/`. Type the slash command, or just as
 | `/capture <text>` | Appends to the inbox instantly, with no questions asked. |
 | `/mindsweep [personal\|work\|all]` | Walks the GTD trigger list one category at a time to empty your head. |
 | `/process [batch]` | Clarifies each inbox item with the GTD decision tree and files it. |
+| `/today [@context] [low\|med\|high]` | Plans the day: your calendar, due follow-ups, actionable email, and 3–5 focus actions. Saves the plan to `daily/`. Uses Google Calendar and Gmail when connected; tune it in `settings.md`. |
 | `/next [@context] [30m] [low\|med\|high]` | Suggests the best 3–5 actions for your situation. |
 | `/done <keywords>` | Completes an action, logs it, and asks for the project's next action. |
 | `/project [name]` | Creates a project, or lists projects and flags stalled ones. |
@@ -76,6 +77,7 @@ Each command is a skill in `.claude/skills/`. Type the slash command, or just as
 | `lists/shopping.md` | Shopping list, grouped by shop. Wish-list items go in `someday-maybe.md` under `## Wish list`. |
 | `completed.md` | Log of what you finished. |
 | `reviews/` | Weekly review notes. |
+| `daily/` | Daily plans from `/today`. |
 | `settings.md` | Your settings, such as the git sync mode. |
 | `CLAUDE.md` | The rules and formats Claude follows. Edit it to change how the system behaves. |
 

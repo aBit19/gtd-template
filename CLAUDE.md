@@ -19,6 +19,7 @@ This repository is a Getting Things Done (GTD) system based on David Allen's boo
 | `lists/shopping.md` | Shopping list: simple purchases grouped by shop. |
 | `completed.md` | Log of completed actions and projects, grouped by date. |
 | `reviews/YYYY-MM-DD.md` | Weekly review notes. |
+| `daily/YYYY-MM-DD.md` | Daily plans from `/today`: hard landscape and daily focus. |
 | `settings.md` | Instance settings, such as the git sync mode. |
 
 HTML comments (`<!-- ... -->`) in data files document the format. Ignore them when reading items and never remove them.
@@ -59,6 +60,20 @@ Example: `- [ ] Call Dr. Rossi's office to book a cleaning @phone +dental-checku
 ## YYYY-MM-DD
 - <action or "Project completed: <name>"> [@context] [+project-slug]
 ```
+
+**Daily plan** (`daily/YYYY-MM-DD.md`)
+```markdown
+# YYYY-MM-DD
+
+## Hard landscape
+- [HH:MM] <what> [+project-slug]
+
+## Focus
+- [ ] <action text as in next-actions.md, without metadata> @context [+project-slug]
+
+## Notes
+```
+Focus items are checked (`- [x]`) when completed; unchecked ones are simply not done that day.
 
 **Shopping list** (in `lists/shopping.md`, under one `## <shop or category>` heading per shop)
 ```
@@ -131,6 +146,7 @@ Commands are skills in `.claude/skills/<name>/SKILL.md`. Each runs with its slas
 | `/capture <text>` | Append to inbox instantly. |
 | `/mindsweep` | Guided trigger-list brain dump into the inbox. |
 | `/process` | Clarify and organize inbox items one by one. |
+| `/today [@context] [energy]` | Plan the day: hard landscape, due items, daily focus. |
 | `/next [@context] [time] [energy]` | Suggest what to do now. |
 | `/done <action>` | Complete an action, log it, keep its project moving. |
 | `/project [name]` | Create a project, or list projects and flag stalled ones. |

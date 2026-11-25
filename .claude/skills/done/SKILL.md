@@ -22,4 +22,5 @@ Steps:
    - If not, ask: "What's the next action for <project>, or is the project complete?"
      - New action: add it to `next-actions.md` in the proper format.
      - Complete: set `Status: completed`, add a log entry, move the file to `projects/archive/`, and add `- Project completed: <name> +slug` to today's section in `completed.md`.
-5. Reply in one or two lines.
+5. If `daily/YYYY-MM-DD.md` exists for today and its `## Focus` list has the completed action, check it off there (`- [x]`).
+6. Reply in one or two lines.
