@@ -42,7 +42,7 @@ git pull upstream main
 | Anytime | `/capture <thought>` — get it out of your head in seconds. Say "add milk to the shopping list" for groceries. |
 | Daily | `/today` — plan the day. `/process` — empty the inbox. `/next` — choose what to do. `/done` — check things off. |
 | Weekly | `/weekly-review` — get clear, get current, get creative. |
-| As needed | `/mindsweep`, `/project`, `/waiting`, `/contexts`. |
+| As needed | `/mindsweep`, `/project`, `/waiting`, `/contexts`, `/summary`. |
 
 ## Commands
 
@@ -60,6 +60,7 @@ Each command is a skill in `.claude/skills/`. Type the slash command, or just as
 | `/waiting [what — from whom]` | Adds a waiting-for item, or reviews overdue ones. |
 | `/contexts [list\|add\|rename\|remove]` | Manages your contexts. |
 | `/weekly-review` | Guided weekly review; writes notes to `reviews/`. |
+| `/summary [day\|week\|month\|year]` | Shows what you got done: wins, numbers vs. the previous period, where your effort went. |
 
 ## Files
 

@@ -153,3 +153,4 @@ Commands are skills in `.claude/skills/<name>/SKILL.md`. Each runs with its slas
 | `/waiting [item — person]` | Add a waiting-for item, or review the list. |
 | `/contexts [list\|add\|rename\|remove]` | Manage contexts. |
 | `/weekly-review` | Guided GTD weekly review. |
+| `/summary [period]` | Encouraging summary of what got done, compared with the previous period. |

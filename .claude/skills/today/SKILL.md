@@ -17,6 +17,7 @@ Read the `## Today` section of `settings.md` first. Defaults when missing: `cale
 If today's file `daily/YYYY-MM-DD.md` already exists, show it and offer to update it instead of starting over.
 
 Steps:
+0. **Yesterday.** If `completed.md` or `daily/` has anything for yesterday, open with one encouraging line, for example `Yesterday: 5 done, 3/4 focus.` Mention only what went well; skip the line if nothing was done.
 1. **Hard landscape.** Read today's entries in `calendar.md` (this moves due ticklers to the inbox, rule 13 in `CLAUDE.md`). If a calendar connector is available, also read today's events from the user's primary calendar. Show one timeline, sorted by time, followed by the free blocks of 30 minutes or more between now and the end of the working day (for example `09:00–11:30 free (2h30)`). Without a calendar connector, use `calendar.md` alone and say so in one line.
 2. **Due items.** In one line each, only if there are any:
    - Waiting-for items whose follow-up date is today or past, each with a one-line suggested nudge.

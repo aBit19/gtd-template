@@ -27,9 +27,12 @@ First, find the most recent file in `reviews/` and tell the user when the last r
 12. **Horizons check.** If `horizons.md` shows "Last reviewed" more than 90 days ago (or never), suggest a short horizons review now or scheduling one as a calendar entry. If reviewed now, update the date.
 
 ## Wrap up
+13. **Celebrate.** Run the `/summary week` flow and show it.
+
 Write `reviews/YYYY-MM-DD.md` (today's date) with:
 - Date and which steps were done or skipped.
 - Completed this week (from `completed.md`, the last seven days).
+- Summary: the headline and the numbers from step 13.
 - Projects added, completed, put on hold, or dropped.
 - Stalled projects found and how they were resolved.
 - Waiting-for follow-ups made.
