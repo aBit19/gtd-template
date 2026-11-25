@@ -24,7 +24,7 @@ git config merge.ours.driver true   # keep your data and settings when pulling t
 
 Then choose how Claude saves your changes with git by setting the mode in `settings.md` (`manual`, `direct-main`, or `pull-request`; default `manual`). Use `direct-main` if you work from several devices, such as a laptop and the Claude app.
 
-Open the folder in Claude Code and run `/mindsweep` to fill your inbox, followed by `/process`.
+Open the folder in Claude Code and say *hi*: Claude offers a short setup (`/guide setup`) that sets your git sync mode, contexts, and areas of focus, then starts your first `/mindsweep`. Run `/guide` any time for a tour of the system, or `/guide <question>` to ask how something works.
 
 ### Getting template updates
 
@@ -50,6 +50,7 @@ Each command is a skill in `.claude/skills/`. Type the slash command, or just as
 
 | Command | What it does |
 |---------|-------------|
+| `/guide [setup\|topic]` | Gives a short tour, answers questions about the system, or walks you through first-run setup. |
 | `/capture <text>` | Appends to the inbox instantly, with no questions asked. |
 | `/mindsweep [personal\|work\|all]` | Walks the GTD trigger list one category at a time to empty your head. |
 | `/process [batch]` | Clarifies each inbox item with the GTD decision tree and files it. |

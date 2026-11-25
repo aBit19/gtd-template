@@ -129,6 +129,10 @@ Project next actions live in `next-actions.md` (or `waiting-for.md` / `calendar.
 - **Wish list.** Things the user might want to buy one day go in `someday-maybe.md` under `## Wish list` (create the heading if missing).
 - **Gift ideas** for other people go in `reference/gift-ideas.md`, under one `## <person>` heading each.
 
+## First run
+
+If `setup` under `## Setup` in `settings.md` is not `done`, and `inbox.md`, `next-actions.md`, and `completed.md` have no items, offer `/guide setup` once at the start of the conversation, in one line. Do not insist if the user declines or asks for something else.
+
 ## Git sync
 
 Read `mode` under `## Git sync` in `settings.md` and follow it. If the file or the value is missing, use `manual`.
@@ -143,6 +147,7 @@ Commands are skills in `.claude/skills/<name>/SKILL.md`. Each runs with its slas
 
 | Command | Purpose |
 |---------|---------|
+| `/guide [setup\|topic]` | Tour of the system, answers to questions, or first-run setup. |
 | `/capture <text>` | Append to inbox instantly. |
 | `/mindsweep` | Guided trigger-list brain dump into the inbox. |
 | `/process` | Clarify and organize inbox items one by one. |
