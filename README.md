@@ -17,6 +17,11 @@ git remote add origin <your-private-repo-url>
 git push -u origin main
 ```
 
+In every clone of your instance, run once:
+```bash
+git config merge.ours.driver true   # keep your data and settings when pulling template updates
+```
+
 Then choose how Claude saves your changes with git by setting the mode in `settings.md` (`manual`, `direct-main`, or `pull-request`; default `manual`). Use `direct-main` if you work from several devices, such as a laptop and the Claude app.
 
 Open the folder in Claude Code and run `/mindsweep` to fill your inbox, followed by `/process`.
@@ -28,7 +33,7 @@ Improvements to the system live in `.claude/skills/`, `CLAUDE.md`, and this READ
 git remote add upstream <template-url>   # once, if not already set
 git pull upstream main
 ```
-Data files and `settings.md` in the template stay as skeletons that updates never change, so updates should not conflict with your data or settings. If they do, keep your version of the data file.
+`.gitattributes` marks the data files, the data folders, and `settings.md` as `merge=ours`. When a template update and your instance both changed one of these files, git keeps your version automatically, so updates do not conflict with your data or settings. This needs the one-time `git config merge.ours.driver true` from the setup above; without it, git merges these files normally and may report conflicts. Settings that a template update adds but your `settings.md` lacks fall back to their defaults.
 
 ## Daily and weekly rhythm
 

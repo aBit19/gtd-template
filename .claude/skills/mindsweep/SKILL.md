@@ -5,7 +5,7 @@ argument-hint: "[personal|work|all]"
 disable-model-invocation: true
 ---
 
-Run a GTD mind sweep to get everything out of the user's head and into `inbox.md`. Scope: $ARGUMENTS (default: all).
+Run a GTD mind sweep to get everything out of the user's head and into `inbox.md`. Scope: $ARGUMENTS. If empty, use `scope` under `## Mind sweep` in `settings.md`; if that is missing, use `all`.
 
 How to run it:
 1. Explain in one line: you will go through trigger categories one at a time; the user lists whatever comes to mind, says "next" to move on, or "stop" to finish early.

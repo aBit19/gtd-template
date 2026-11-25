@@ -15,7 +15,7 @@ Parse the arguments:
 - Anything missing is unconstrained. Do not ask for it.
 
 Steps:
-1. Read `calendar.md` and show anything dated today or overdue first. That is the hard landscape and comes before any next action.
+1. Read `calendar.md`. Move due ticklers into the inbox (rule 13 in `CLAUDE.md`). Then show anything else dated today or overdue first. That is the hard landscape and comes before any next action.
 2. Read `next-actions.md`. Keep open actions (`- [ ]`) that match the contexts given (`@anywhere` always matches). Drop actions whose `~time` exceeds the time available. When energy is given, prefer actions whose `!energy` is at or below it; actions without an energy tag remain eligible.
 3. Rank the remaining actions:
    - Actions tied to projects with a due date soon (read the `Due:` line in `projects/<slug>.md`).

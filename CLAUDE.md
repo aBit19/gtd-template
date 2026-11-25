@@ -103,11 +103,12 @@ Project next actions live in `next-actions.md` (or `waiting-for.md` / `calendar.
 10. **Edit minimally.** Preserve formats, headings, HTML comments, and sort orders. Do not reformat unrelated lines.
 11. **Offer capture.** If the user mentions a commitment or idea in normal conversation, offer to capture it to the inbox.
 12. **Privacy.** This data is personal. Never send file contents to external services.
+13. **Ticklers resurface on their date.** Whenever you read `calendar.md`, move every `tickler:` item dated today or earlier into `inbox.md` as `- <item> (captured YYYY-MM-DD)` with today's date, remove it from the calendar, and say so in one line.
 
 ## Shopping and wish lists
 
 - **Shopping list.** Simple purchases that need no research or decision (groceries, household restock, consumables) go in `lists/shopping.md` under the matching shop heading (create the heading if missing), not in `next-actions.md`. When the user asks to add something to the shopping list, add it directly, without going through the inbox.
-- **One action for the list.** While the shopping list has open items, `next-actions.md` keeps exactly one action pointing to it: `- [ ] Buy items on the shopping list @errands (added YYYY-MM-DD)`. Add it if it is missing.
+- **One action for the list.** While the shopping list has open items, `next-actions.md` keeps exactly one action pointing to it: `- [ ] Buy items on the shopping list @errands (added YYYY-MM-DD)`. Add it if it is missing. If it already exists, keep whatever context it has. When adding it, use `@errands`; if `@errands` is not in `contexts.md`, ask which context to use.
 - **Bought items** are removed from the list, not logged individually in `completed.md`.
 - **Purchases that need thought** (comparing options, measuring, choosing) are normal next actions or projects.
 - **Wish list.** Things the user might want to buy one day go in `someday-maybe.md` under `## Wish list` (create the heading if missing).
@@ -118,7 +119,7 @@ Project next actions live in `next-actions.md` (or `waiting-for.md` / `calendar.
 Read `mode` under `## Git sync` in `settings.md` and follow it. If the file or the value is missing, use `manual`.
 
 - `manual`: Do not commit or push unless the user asks.
-- `direct-main`: Before making changes, pull `origin main`. After making changes, commit them to `main` and push to `origin main`. Do not create branches or pull requests.
+- `direct-main`: At the start of every command or request that reads the GTD files, including read-only ones such as `/next` and list views, pull `origin main`. After making changes, commit them to `main` and push to `origin main`. Do not create branches or pull requests.
 - `pull-request`: Commit changes to a new branch and open a pull request against `main`. Share the pull request link. Do not merge it yourself.
 
 ## Commands

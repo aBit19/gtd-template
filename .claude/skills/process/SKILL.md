@@ -6,7 +6,7 @@ argument-hint: "[batch]"
 
 If this was triggered by a plain-language request instead of the slash command, take the arguments from the user's latest message.
 
-Process `inbox.md` to zero, following the GTD clarify and organize steps. Read `contexts.md`, `horizons.md` (areas), and the list of files in `projects/` first so suggestions use real contexts, areas, and projects.
+Process `inbox.md` to zero, following the GTD clarify and organize steps. First move due ticklers from `calendar.md` into the inbox (rule 13 in `CLAUDE.md`). Read `contexts.md`, `horizons.md` (areas), and the list of files in `projects/` first so suggestions use real contexts, areas, and projects.
 
 Mode: $ARGUMENTS
 - Default (empty): go one item at a time, top to bottom.
@@ -21,7 +21,7 @@ For each item, propose a decision using this decision tree, then wait for the us
    - **No, but relevant on a specific date:** add to `calendar.md` as info or as a `tickler:` entry.
 2. **Yes, it is actionable. What is the desired outcome?** If it needs more than one action, it is a project. Propose a project name phrased as an outcome and an area, then create `projects/<slug>.md` using the project format in `CLAUDE.md`. If it belongs to an existing project, link it with `+slug`.
 3. **What is the very next physical action?** Propose a concrete, verb-first action. If the user's wording is vague, rewrite it and show the rewrite.
-   - **Simple purchase that needs no research or decision** (groceries, household restock, consumables): add to `lists/shopping.md` under the matching shop heading, and make sure the single `Buy items on the shopping list @errands` action exists.
+   - **Simple purchase that needs no research or decision** (groceries, household restock, consumables): add to `lists/shopping.md` under the matching shop heading, and make sure the single `Buy items on the shopping list` action exists (its context follows the shopping-list rule in `CLAUDE.md`).
    - **Takes less than two minutes:** suggest doing it now. If the user does it, log it in `completed.md` under today's date.
    - **Someone else should do it:** add to `waiting-for.md` with `from:` and today's `since` date. If the user needs to send the request first, also add that as a next action.
    - **Must happen on a specific day or time:** add to `calendar.md` under `## Upcoming`, sorted by date.
